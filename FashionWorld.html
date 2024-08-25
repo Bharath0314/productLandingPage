@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)file:///C:/Users/bhara/OneDrive/Desktop/PRODUCTLOG.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion &amp; Film Heroes</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #333;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #007BFF;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('C:\Users\bhara\OneDrive\Desktop\bharath profile\images.jpeg') no-repeat center center/cover;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .hero .btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .hero .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Products Section */
+        .products {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .products h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .product-item p {
+            color: #555;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .product-item .price {
+            font-size: 1.4rem;
+            color: #007BFF;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .product-item .btn {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .product-item .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Heroes Section */
+        .heroes {
+            padding: 50px 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .heroes h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .hero-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .hero-item h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Fashion World</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="file:///C:/Users/bhara/OneDrive/Desktop/PRODUCTLOG.html#">Home</a>
+        <a href="file:///C:/Users/bhara/OneDrive/Desktop/PRODUCTLOG.html#">Shop</a>
+        <a href="file:///C:/Users/bhara/OneDrive/Desktop/PRODUCTLOG.html#">About</a>
+        <a href="file:///C:/Users/bhara/OneDrive/Desktop/PRODUCTLOG.html#">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Exclusive Summer Collection</h1>
+            <p>Explore the latest trends and elevate your style with our new arrivals.</p>
+            <a href="file:///C:/Users/bhara/OneDrive/Desktop/PRODUCTLOG.html#" class="btn">Shop Now</a>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <section class="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <!-- Product 2 -->
+            <div class="product-item">
+                <img src="./FashionWorld_files/images" alt="Casual Summer Dress">
+                <h3>Casual Summer Dress</h3>
+                <p>Comfortable and stylish for everyday wear.</p>
+                <div class="price">$89.99</div>
+                <a href="file:///C:/Users/bhara/OneDrive/Desktop/PRODUCTLOG.html#" class="btn">Buy Now</a>
+            </div>
+              <!-- Product 1 -->
+              <div class="product-item">
+                <img src="./FashionWorld_files/anushka%20shetty%20collage_0.jpg" alt="Elegant Evening Gown">
+                <h3>Elegant Evening Gown</h3>
+                <p>Make a statement with this elegant evening gown.</p>
+                <div class="price">$199.99</div>
+                <a href="file:///C:/Users/bhara/OneDrive/Desktop/PRODUCTLOG.html#" class="btn">Buy Now</a>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-item">
+                <img src="./FashionWorld_files/84974113.jpg" alt="Chic Party Dress">
+                <h3>Chic Party Dress</h3>
+                <p>Perfect for making an impression at any event.</p>
+                <div class="price">$129.99</div>
+                <a href="file:///C:/Users/bhara/OneDrive/Desktop/PRODUCTLOG.html#" class="btn">Buy Now</a>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-item">
+                <img src="./FashionWorld_files/14-Sofia-C1_600x.jpg" alt="Boho Maxi Dress">
+                <h3>Boho Maxi Dress</h3>
+                <p>Relaxed and free-flowing for a laid-back look.</p>
+                <div class="price">$109.99</div>
+                <a href="file:///C:/Users/bhara/OneDrive/Desktop/PRODUCTLOG.html#" class="btn">Buy Now</a>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-item">
+                <img src="./FashionWorld_files/x3bov_512.jpg" alt="Floral Sundress">
+                <h3>Floral Sundress</h3>
+                <p>Bright and fun for sunny days.</p>
+                <div class="price">$69.99</div>
+                <a href="file:///C:/Users/bhara/OneDrive/Desktop/PRODUCTLOG.html#" class="btn">Buy Now</a>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-item">
+                <img src="./FashionWorld_files/images(1)" alt="Off-Shoulder Dress">
+                <h3>Off-Shoulder Dress</h3>
+                <p>Elegant and trendy for a modern look.</p>
+                <div class="price">$149.99</div>
+                <a href="file:///C:/Users/bhara/OneDrive/Desktop/PRODUCTLOG.html#" class="btn">Buy Now</a>
+            </div>
+            <!-- Product 7 -->
+            <div class="product-item">
+                <img src="./FashionWorld_files/il_570xN.4151391611_ipbt.jpg" alt="Wrap Dress">
+                <h3>Wrap Dress</h3>
+                <p>Versatile and flattering for any occasion.</p>
+                <div class="price">$99.99</div>
+                <a href="file:///C:/Users/bhara/OneDrive/Desktop/PRODUCTLOG.html#" class="btn">Buy Now</a>
+            </div>
+            <!-- Product 8 -->
+            <div class="product-item">
+                <img src="./FashionWorld_files/863653227e0d51f5fb5bce31824c1698.jpg" alt="Elegant Cocktail Dress">
+                <h3>Elegant Cocktail Dress</h3>
+                <p>Stand out at your next cocktail party.</p>
+                <div class="price">$139.99</div>
+                <a href="file:///C:/Users/bhara/OneDrive/Desktop/PRODUCTLOG.html#" class="btn">Buy Now</a>
+            </div>
+            <!-- Product 9 -->
+            <div class="product-item">
+                <img src="./FashionWorld_files/Hock1.jpg" alt="Vintage Tea Dress">
+                <h3>Vintage Tea Dress</h3>
+                <p>Timeless style with a modern touch.</p>
+                <div class="price">$119.99</div>
+                <a href="file:///C:/Users/bhara/OneDrive/Desktop/PRODUCTLOG.html#" class="btn">Buy Now</a>
+            </div>
+            <!-- Product 10 -->
+            <div class="product-item">
+                <img src="./FashionWorld_files/2b66963eb8d3c54d557e1f3a25d64156.jpg" alt="Formal Business Dress">
+                <h3>Formal Business Dress</h3>
+                <p>Professional and sleek for the office environment.</p>
+                <div class="price">$179.99</div>
+                <a href="file:///C:/Users/bhara/OneDrive/Desktop/PRODUCTLOG.html#" class="btn">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heroes Section -->
+    <section class="heroes">
+        <h2>Featured Telugu Film Heroes</h2>
+        <div class="hero-grid">
+            <!-- Hero 1: Prabhas -->
+            <div class="hero-item">
+                <img src="./FashionWorld_files/images(2)" alt="Prabhas">
+                <h3>Prabhas</h3>
+                <p>Renowned for his role in blockbuster movies.</p>
+            </div>
+            <!-- Hero 2: Allu Arjun -->
+            <div class="hero-item">
+                <img src="./FashionWorld_files/images(3)" alt="Allu Arjun">
+                <h3>Allu Arjun</h3>
+                <p>Known for his energetic performances and style.</p>
+            </div>
+            <!-- Hero 3: Mahesh Babu -->
+            <div class="hero-item">
+                <img src="./FashionWorld_files/mahesh-babu-ambani-wedding-2024-07-b10de06ed1f26d4be7e14ebd7ea73117.jpg" alt="Mahesh Babu">
+                <h3>Mahesh Babu</h3>
+                <p>One of the most popular actors in Telugu cinema.</p>
+            </div>
+            <!-- Hero 4: Ram Charan -->
+            <div class="hero-item">
+                <img src="./FashionWorld_files/1324325-95221886.webp" alt="Ram Charan">
+                <h3>Ram Charan</h3>
+                <p>Famous for his versatile acting and action roles.</p>
+            </div>
+            <!-- Hero 5: NTR Jr. -->
+            <div class="hero-item">
+                <img src="./FashionWorld_files/jr-ntr-birthday-man-of-masses-upcoming-movies.jpg" alt="NTR Jr.">
+                <h3>NTR Jr.</h3>
+                <p>Known for his powerful performances and dance skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Fashion &amp; Film Heroes. All rights reserved.</p>
+    </footer>
+
+
+
+</body></html>
